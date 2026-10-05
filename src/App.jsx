@@ -9,7 +9,7 @@ import { ROUTES } from "./contants/routes";
 
 export default function App() {
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       <NavBar />
       <main className="main-content">
         <Routes >
